@@ -25,7 +25,11 @@ export default function Sidebar({ open, onClose }) {
   return (
     <>
       {open && (
-        <div className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm lg:hidden" onClick={onClose} aria-hidden="true" />
+        <div
+          className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm lg:hidden"
+          onClick={onClose}
+          aria-hidden="true"
+        />
       )}
       <aside
         className={`glass-strong fixed inset-y-0 left-0 z-50 flex w-64 flex-col border-r border-border/70 p-5 transition-transform duration-300 lg:sticky lg:top-0 lg:z-0 lg:h-screen lg:translate-x-0 ${
@@ -38,11 +42,19 @@ export default function Sidebar({ open, onClose }) {
               <Wallet size={18} />
             </div>
             <div>
-              <p className="font-display text-sm font-bold leading-none text-ink">Expense</p>
-              <p className="font-display text-sm font-bold leading-none text-gold">Tracker</p>
+              <p className="font-display text-sm font-bold leading-none text-ink">
+                FinFlow
+              </p>
+              <p className="font-display text-sm font-bold leading-none text-gold">
+                AI
+              </p>
             </div>
           </div>
-          <button onClick={onClose} className="rounded-lg p-1.5 text-muted hover:text-ink lg:hidden" aria-label="Close menu">
+          <button
+            onClick={onClose}
+            className="rounded-lg p-1.5 text-muted hover:text-ink lg:hidden"
+            aria-label="Close menu"
+          >
             <X size={18} />
           </button>
         </div>
@@ -56,7 +68,9 @@ export default function Sidebar({ open, onClose }) {
               onClick={onClose}
               className={({ isActive }) =>
                 `flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-medium transition ${
-                  isActive ? "bg-gold-soft text-gold" : "text-muted hover:bg-white/5 hover:text-ink"
+                  isActive
+                    ? "bg-gold-soft text-gold"
+                    : "text-muted hover:bg-white/5 hover:text-ink"
                 }`
               }
             >
@@ -68,7 +82,8 @@ export default function Sidebar({ open, onClose }) {
 
         <div className="rounded-xl bg-white/5 p-3.5 text-xs text-muted">
           <p className="mb-1 font-medium text-ink">💡 Tip</p>
-          Try the AI Assistant — just type "Spent ₹200 on food today" and let it do the rest.
+          Try the AI Assistant — just type "Spent ₹200 on food today" and let it
+          do the rest.
         </div>
       </aside>
     </>
