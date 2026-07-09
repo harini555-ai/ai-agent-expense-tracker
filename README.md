@@ -1,4 +1,4 @@
-# AI Expense Tracker
+## FinFlow AI
 
 AI-powered expense tracker that converts natural language expense entries into categorized financial transactions.
 
