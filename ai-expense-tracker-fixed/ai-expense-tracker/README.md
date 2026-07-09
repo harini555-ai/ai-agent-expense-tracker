@@ -1,4 +1,4 @@
-# AI Expense Tracker
+# FinFlow AI
 
 A modern, minimal, glassmorphic expense tracker built with React 19 and Vite. Track income and expenses, visualize spending with charts, and add transactions just by describing them in plain English — powered by the OpenAI API.
 
